@@ -18,9 +18,9 @@ Add to your pom.xml
 
 ```xml
 <dependency>
-    <groupId>com.wealoha</groupId>
+    <groupId>de.cpg.oss</groupId>
     <artifactId>thrift-client-pool-java</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 </dependency>
 ```
 

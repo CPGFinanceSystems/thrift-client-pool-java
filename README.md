@@ -3,6 +3,9 @@ thrift-client-pool-java
 
 A Thrift Client pool for Java
 
+[![Build Status](https://api.travis-ci.org/CPGFinanceSystems/thrift-client-pool-java.svg?branch=master)]
+(https://travis-ci.org/CPGFinanceSystems/thrift-client-pool-java)
+
 * [x] raw and TypeSafe TServiceClient pool
 * [x] Multi Backend Servers support
 * [x] Backend Servers replace on the fly

@@ -1,7 +1,6 @@
 package com.wealoha.thrift.exception;
 
 /**
- * 
  * @author javamonk
  */
 public class ThriftException extends RuntimeException {

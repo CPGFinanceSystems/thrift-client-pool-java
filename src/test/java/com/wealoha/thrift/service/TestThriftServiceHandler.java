@@ -1,11 +1,9 @@
 package com.wealoha.thrift.service;
 
+import com.wealoha.thrift.service.TestThriftService.Iface;
 import org.apache.thrift.TException;
 
-import com.wealoha.thrift.service.TestThriftService.Iface;
-
 /**
- * 
  * @author javamonk
  */
 public class TestThriftServiceHandler implements Iface {

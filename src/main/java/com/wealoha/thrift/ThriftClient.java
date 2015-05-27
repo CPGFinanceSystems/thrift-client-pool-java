@@ -8,10 +8,10 @@ import java.io.Closeable;
 
 /**
  * The thrift client which hold the connection to backend server.<br/>
- * 
+ * <p/>
  * ThriftClient is not thread-safe, you must obtain separately from
  * {@link ThriftClientPool} for each thread.
- * 
+ *
  * @author javamonk
  */
 @Slf4j
@@ -26,7 +26,7 @@ public class ThriftClient<T extends TServiceClient> implements Closeable {
     private boolean finish;
 
     public ThriftClient(T client, ObjectPool<ThriftClient<T>> pool,
-            ServiceInfo serviceInfo) {
+                        ServiceInfo serviceInfo) {
         super();
         this.client = client;
         this.pool = pool;
@@ -72,7 +72,6 @@ public class ThriftClient<T extends TServiceClient> implements Closeable {
 
     /**
      * client should return to pool
-     * 
      */
     public void finish() {
         this.finish = true;

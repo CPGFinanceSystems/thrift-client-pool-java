@@ -5,7 +5,6 @@ import org.apache.thrift.TServiceClient;
 import org.apache.thrift.protocol.TProtocol;
 
 /**
- * 
  * @author javamonk
  */
 @Slf4j

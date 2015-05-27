@@ -1,16 +1,15 @@
 package com.wealoha.thrift.service;
 
+import com.wealoha.thrift.service.TestThriftService.Processor;
 import org.apache.thrift.server.TThreadPoolServer;
 import org.apache.thrift.server.TThreadPoolServer.Args;
 import org.apache.thrift.transport.TFramedTransport;
 import org.apache.thrift.transport.TServerSocket;
 import org.apache.thrift.transport.TServerTransport;
 
-import com.wealoha.thrift.service.TestThriftService.Processor;
-
 /**
  * Simple echo thrift service for testing purpose.
- * 
+ *
  * @author javamonk
  */
 public class TestThriftServiceStarter {

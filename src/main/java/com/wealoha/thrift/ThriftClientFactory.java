@@ -8,14 +8,14 @@ import org.apache.thrift.protocol.TProtocol;
  * We don't know their types. <br/>
  * Since they all extends super class TServiceClient,
  * construct a new Client need only just one line.<br/>
- * 
+ *
  * @author javamonk
  */
 public interface ThriftClientFactory<T extends TServiceClient> {
 
     /**
      * return a new client using protocol<br/>
-     * 
+     * <p/>
      * <code>
      * <pre>
      *     public TServiceClient makeClient(TProtocol protocol) {
@@ -23,7 +23,6 @@ public interface ThriftClientFactory<T extends TServiceClient> {
      *     }
      * </pre>
      * </code>
-     * 
      */
     T createClient(TProtocol protocol);
 

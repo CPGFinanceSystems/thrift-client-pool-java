@@ -2,7 +2,7 @@ package com.wealoha.thrift.exception;
 
 /**
  * No backend service
- * 
+ *
  * @author javamonk
  */
 public class NoBackendServiceException extends ConnectionFailException {

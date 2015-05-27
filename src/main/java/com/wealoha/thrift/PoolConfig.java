@@ -5,7 +5,7 @@ import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 /**
  * Pool configurations all by passing to commons-pool2, see
  * {@link GenericObjectPoolConfig} for details.
- * 
+ *
  * @author javamonk
  */
 public class PoolConfig extends GenericObjectPoolConfig {
@@ -23,7 +23,7 @@ public class PoolConfig extends GenericObjectPoolConfig {
 
     /**
      * set default connection socket timeout
-     * 
+     *
      * @param timeout timeout millis
      */
     public void setTimeout(int timeout) {

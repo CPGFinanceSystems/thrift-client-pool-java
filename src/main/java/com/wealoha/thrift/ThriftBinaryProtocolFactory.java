@@ -8,7 +8,6 @@ import org.apache.thrift.transport.TTransport;
 /**
  * ThriftProtocolFactory using TBinaryProtocol with TFramedTransport
  * This is also the default protocol factory
- * 
  */
 public class ThriftBinaryProtocolFactory implements ThriftProtocolFactory {
 

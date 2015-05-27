@@ -10,7 +10,6 @@ import org.apache.thrift.protocol.TProtocol;
  * construct a new Client need only just one line.<br/>
  * 
  * @author javamonk
- * @createTime 2014年11月22日 下午2:49:53
  */
 public interface ThriftClientFactory<T extends TServiceClient> {
 
@@ -25,8 +24,6 @@ public interface ThriftClientFactory<T extends TServiceClient> {
      * </pre>
      * </code>
      * 
-     * @param protocol
-     * @return
      */
     T createClient(TProtocol protocol);
 

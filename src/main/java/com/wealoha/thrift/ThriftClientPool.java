@@ -28,7 +28,6 @@ import java.util.stream.Collectors;
  * </code>
  *
  * @author javamonk
- * @createTime 2014年7月4日 下午3:55:16
  */
 @Slf4j
 public class ThriftClientPool<T extends TServiceClient> {
@@ -47,20 +46,13 @@ public class ThriftClientPool<T extends TServiceClient> {
 
     /**
      * Construct a new pool using default config
-     *
-     * @param services
-     * @param factory
      */
     public ThriftClientPool(List<ServiceInfo> services, ThriftClientFactory<T> factory) {
         this(services, factory, new PoolConfig(), null);
     }
 
     /**
-     * Construct a new pool using
-     *
-     * @param services
-     * @param factory
-     * @param config
+     * Construct a new pool
      */
     public ThriftClientPool(List<ServiceInfo> services, ThriftClientFactory<T> factory,
                             PoolConfig config) {
@@ -160,8 +152,6 @@ public class ThriftClientPool<T extends TServiceClient> {
 
     /**
      * set new services for this pool
-     *
-     * @param services
      */
     public void setServices(List<ServiceInfo> services) {
         if (services == null || services.size() == 0) {
@@ -189,9 +179,6 @@ public class ThriftClientPool<T extends TServiceClient> {
 
     /**
      * get a random service
-     *
-     * @param serviceList
-     * @return
      */
     private ServiceInfo getRandomService(List<ServiceInfo> serviceList) {
         if (serviceList == null || serviceList.size() == 0) {
@@ -211,7 +198,6 @@ public class ThriftClientPool<T extends TServiceClient> {
     /**
      * get a client from pool
      *
-     * @return
      * @throws ThriftException
      * @throws NoBackendServiceException if
      *                                   {@link PoolConfig#setFailover(boolean)} is set and no
@@ -244,7 +230,6 @@ public class ThriftClientPool<T extends TServiceClient> {
      * once.</span></li>
      * </ul>
      *
-     * @return
      * @throws ThriftException
      * @throws NoBackendServiceException if
      *                                   {@link PoolConfig#setFailover(boolean)} is set and no

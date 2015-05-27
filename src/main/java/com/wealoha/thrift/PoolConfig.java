@@ -7,7 +7,6 @@ import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
  * {@link GenericObjectPoolConfig} for details.
  * 
  * @author javamonk
- * @createTime 2014年11月22日 下午2:25:30
  */
 public class PoolConfig extends GenericObjectPoolConfig {
 
@@ -17,8 +16,6 @@ public class PoolConfig extends GenericObjectPoolConfig {
 
     /**
      * get default connection socket timeout (default 0, means not timeout)
-     * 
-     * @return
      */
     public int getTimeout() {
         return timeout;
@@ -35,8 +32,6 @@ public class PoolConfig extends GenericObjectPoolConfig {
 
     /**
      * get connect to next service if one service fail(default false)
-     * 
-     * @return
      */
     public boolean isFailover() {
         return failover;
@@ -44,8 +39,6 @@ public class PoolConfig extends GenericObjectPoolConfig {
 
     /**
      * set connect to next service if one service fail
-     * 
-     * @param failover
      */
     public void setFailover(boolean failover) {
         this.failover = failover;

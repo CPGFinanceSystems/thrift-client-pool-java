@@ -13,7 +13,6 @@ import java.io.Closeable;
  * {@link ThriftClientPool} for each thread.
  * 
  * @author javamonk
- * @createTime 2014年7月4日 下午3:50:51
  */
 @Slf4j
 public class ThriftClient<T extends TServiceClient> implements Closeable {
@@ -36,8 +35,6 @@ public class ThriftClient<T extends TServiceClient> implements Closeable {
 
     /**
      * get backend service which this client current connect to
-     * 
-     * @return
      */
     public ServiceInfo getServiceInfo() {
         return serviceInfo;
@@ -45,8 +42,6 @@ public class ThriftClient<T extends TServiceClient> implements Closeable {
 
     /**
      * Retrieve the IFace
-     * 
-     * @return
      */
     public T iFace() {
         return client;

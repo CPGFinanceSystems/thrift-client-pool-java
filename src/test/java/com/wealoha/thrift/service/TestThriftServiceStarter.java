@@ -12,7 +12,6 @@ import com.wealoha.thrift.service.TestThriftService.Processor;
  * Simple echo thrift service for testing purpose.
  * 
  * @author javamonk
- * @createTime 2014年7月4日 下午4:58:19
  */
 public class TestThriftServiceStarter {
 

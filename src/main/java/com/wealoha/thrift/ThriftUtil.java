@@ -7,15 +7,12 @@ import org.apache.thrift.protocol.TProtocol;
 /**
  * 
  * @author javamonk
- * @createTime 2014年11月22日 下午8:40:26
  */
 @Slf4j
 public abstract class ThriftUtil {
 
     /**
      * close internal transport
-     * 
-     * @param client
      */
     public static void closeClient(TServiceClient client) {
         if (client == null) {

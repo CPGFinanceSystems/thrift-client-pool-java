@@ -27,7 +27,6 @@ import java.util.concurrent.TimeUnit;
 /**
  * 
  * @author javamonk
- * @createTime 2014年7月4日 下午4:51:18
  */
 public class TestThriftClientPool {
 
